@@ -9,21 +9,29 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *foodWasteLabel;
+@property (nonatomic, assign) NSInteger foodWaste;
 @end
 
 @implementation ViewController
+@synthesize foodWaste = _foodWaste;
+NSInteger _foodWaste = 0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [NSTimer scheduledTimerWithTimeInterval:(5.0) repeats:(YES) block:^(NSTimer * _Nonnull timer) {
+        _foodWaste = (_foodWaste + 10056) ;
+        NSString* foodWasteString = [NSString stringWithFormat:@"%li",(long)self.foodWaste];
+        [self changeLabel:self.foodWasteLabel withString:foodWasteString];
+        NSLog(@"Timer called");
+    } ];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)changeLabel:(UILabel* )label
+         withString:(NSString*)string
+{
+    label.text = string;
 }
-
 
 @end
