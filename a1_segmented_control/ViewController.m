@@ -8,7 +8,10 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+- (IBAction)segmentedControlValueChanged:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *segmentedControlLabel;
 
 @end
 
@@ -20,10 +23,15 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)segmentedControlValueChanged:(UISegmentedControl *)sender {
+    NSInteger index = sender.selectedSegmentIndex;
+    NSString* indexString = [NSString stringWithFormat:@"%ld",index];
+    [self changeLabel:self.segmentedControlLabel withString:indexString];
 }
 
-
+- (void)changeLabel:(UILabel* )label
+         withString:(NSString*)string
+{
+    label.text = string;
+}
 @end
