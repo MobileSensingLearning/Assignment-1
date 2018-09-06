@@ -28,7 +28,7 @@ static NSString * const reuseIdentifier = @"TrackCell";
     
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
-    self.tracks = @[@"foo", @"bar", @"baz"];
+    self.tracks = @[@"foo", @"bar", @"baz", @"sam", @"owl", @"pizza", @"a", @"b"];
 
     // Register cell classes
     // [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
@@ -66,12 +66,13 @@ static NSString * const reuseIdentifier = @"TrackCell";
     TrackCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"TrackCell" forIndexPath:indexPath];
     
     // Configure the cell
-    NSString *text = [self.tracks objectAtIndex:indexPath.row];
-    
-    NSLog(@"%@", cell.somvariable);
-    //cell.label1.text = text;
     cell.backgroundColor = [UIColor blueColor];
-    
+    NSString *text = [self.tracks objectAtIndex:indexPath.row];
+    NSLog(@"%@", text);
+    cell.label1.text = text;
+    NSLog(@"%@", cell.label1.text);
+    //cell.label1.text = text;
+    //cell.title = cell.label1.text;
     return cell;
 }
 
