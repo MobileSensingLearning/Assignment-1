@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,40 +19,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stepper hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="oRX-ze-BHQ">
+                            <stepper hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="oRX-ze-BHQ">
                                 <rect key="frame" x="140" y="460" width="94" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="stepperClicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="Dzb-Z4-Aik"/>
                                 </connections>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3b-dC-e5s">
-                                <rect key="frame" x="16" y="295" width="343" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Turn on to use the counter." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJr-qH-sjH">
-                                <rect key="frame" x="16" y="257" width="206" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn on to use the counter." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJr-qH-sjH">
+                                <rect key="frame" x="16" y="221" width="206" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gEc-DU-wQ5">
-                                <rect key="frame" x="282" y="247" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gEc-DU-wQ5">
+                                <rect key="frame" x="280" y="216" width="51" height="31"/>
                                 <connections>
                                     <action selector="switcherSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="grg-iT-03I"/>
                                 </connections>
                             </switch>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bep-18-6Re">
+                                <rect key="frame" x="76" y="39" width="222" height="108"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3b-dC-e5s">
+                                <rect key="frame" x="16" y="303" width="343" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gEc-DU-wQ5" firstAttribute="leading" secondItem="RJr-qH-sjH" secondAttribute="trailing" constant="58" id="DaN-fp-iKX"/>
+                            <constraint firstItem="Bep-18-6Re" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="FAE-LB-nrE"/>
+                            <constraint firstItem="RJr-qH-sjH" firstAttribute="centerY" secondItem="gEc-DU-wQ5" secondAttribute="centerY" id="Hws-un-mGe"/>
+                            <constraint firstItem="Bep-18-6Re" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="KFR-Fb-QEE"/>
+                            <constraint firstItem="Bep-18-6Re" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="MqL-wz-BSa"/>
+                            <constraint firstItem="Bep-18-6Re" firstAttribute="centerX" secondItem="d3b-dC-e5s" secondAttribute="centerX" id="SdE-oc-tV0"/>
+                            <constraint firstItem="d3b-dC-e5s" firstAttribute="top" secondItem="RJr-qH-sjH" secondAttribute="bottom" constant="61" id="TvC-gR-Yns"/>
+                            <constraint firstItem="Bep-18-6Re" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="Vur-u9-T6L"/>
+                            <constraint firstItem="d3b-dC-e5s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XcW-iV-y8Q"/>
+                            <constraint firstItem="d3b-dC-e5s" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ZHM-jn-vWK"/>
+                            <constraint firstItem="oRX-ze-BHQ" firstAttribute="top" secondItem="d3b-dC-e5s" secondAttribute="bottom" constant="97" id="Zl9-yg-Db8"/>
+                            <constraint firstItem="d3b-dC-e5s" firstAttribute="centerX" secondItem="oRX-ze-BHQ" secondAttribute="centerX" id="che-jt-YNO"/>
+                            <constraint firstItem="RJr-qH-sjH" firstAttribute="leading" secondItem="d3b-dC-e5s" secondAttribute="leading" id="fHN-vn-g4o"/>
+                            <constraint firstItem="gEc-DU-wQ5" firstAttribute="top" secondItem="Bep-18-6Re" secondAttribute="bottom" constant="69" id="ipz-dd-YFZ"/>
+                            <constraint firstItem="RJr-qH-sjH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="p9i-6n-MpY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="lbl" destination="d3b-dC-e5s" id="anE-Xr-Jjz"/>
+                        <outlet property="picker" destination="Bep-18-6Re" id="Uxw-4W-Gaw"/>
                         <outlet property="stepper" destination="oRX-ze-BHQ" id="2gE-Kv-HDp"/>
                         <outlet property="switcher" destination="gEc-DU-wQ5" id="bvi-XE-3IU"/>
                     </connections>

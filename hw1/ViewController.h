@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lbl;
 @property (weak, nonatomic) IBOutlet UIStepper *stepper;
 @property (weak, nonatomic) IBOutlet UISwitch *switcher;
+@property (weak, nonatomic) IBOutlet UIPickerView *picker;
 
 - (IBAction)stepperClicked:(id)sender;
 

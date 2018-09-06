@@ -19,11 +19,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     _state = 0;
-    UIPickerView * picker = [UIPickerView new];
-    picker.delegate = self;
-    picker.dataSource = self;
-    picker.showsSelectionIndicator = YES;
-    [self.view addSubview:picker];
+    self.picker.delegate = self;
+    self.picker.dataSource = self;
+    self.picker.showsSelectionIndicator = YES;
+  //  [self.view addSubview:picker];
 }
 
 
@@ -57,13 +56,13 @@
     NSString * title = nil;
     switch(row) {
         case 0:
-            title = @"a";
+            title = @"Steps";
             break;
         case 1:
-            title = @"b";
+            title = @"Knuckles Cracked";
             break;
         case 2:
-            title = @"c";
+            title = @"";
             break;
     }
     return title;
