@@ -66,7 +66,7 @@
     if(indexPath.section == 2) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"EnyiCell3" forIndexPath:indexPath];
         // Configure the cell...
-        cell.textLabel.text = @"Section3";
+        cell.textLabel.text = @"StepSwitch!";
     }
     if(indexPath.section == 3) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"EnyiCell4" forIndexPath:indexPath];

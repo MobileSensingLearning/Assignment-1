@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -91,7 +92,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="MfF-PG-NiE" kind="show" id="UQ4-Wk-EAX"/>
+                                    <segue destination="yxc-AO-7OW" kind="show" id="6GU-qF-vLq"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EnyiCell4" textLabel="dVJ-cF-BII" style="IBUITableViewCellStyleDefault" id="ZVY-p0-mi8">
@@ -165,21 +166,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7u-VQ-XXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2253" y="567"/>
-        </scene>
-        <!--View Controller Three-->
-        <scene sceneID="hks-gO-NS3">
-            <objects>
-                <viewController id="MfF-PG-NiE" customClass="ViewControllerThree" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="T6J-PN-WY9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="iLv-Oo-Vpm"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="57b-e4-pQp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4038" y="644"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="Tiq-fQ-qmO">
@@ -388,6 +374,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21o-EC-Keb" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4041" y="-62"/>
+        </scene>
+        <!--Step Switch-->
+        <scene sceneID="64M-eZ-TNB">
+            <objects>
+                <viewController id="yxc-AO-7OW" customClass="StepSwitch" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="htF-K7-EyJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Zb7-oX-ZOH">
+                                <rect key="frame" x="140" y="460.5" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperClicked:" destination="yxc-AO-7OW" eventType="valueChanged" id="Sgy-tQ-C5A"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn on to use the counter." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KK6-rE-J7H">
+                                <rect key="frame" x="16" y="221.5" width="206" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYX-Xt-we5">
+                                <rect key="frame" x="76" y="83" width="223" height="134"/>
+                            </pickerView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dj0-ws-OS4">
+                                <rect key="frame" x="280" y="216.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switcherSwitched:" destination="yxc-AO-7OW" eventType="valueChanged" id="tEQ-mZ-4QO"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STR-le-Nzy">
+                                <rect key="frame" x="16" y="303.5" width="343" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MYX-Xt-we5" firstAttribute="centerX" secondItem="STR-le-Nzy" secondAttribute="centerX" id="3X5-DZ-8TZ">
+                                <variation key="heightClass=compact" constant="198.5"/>
+                            </constraint>
+                            <constraint firstItem="dj0-ws-OS4" firstAttribute="leading" secondItem="KK6-rE-J7H" secondAttribute="trailing" constant="58" id="4YK-wT-Wlx">
+                                <variation key="heightClass=compact" constant="65"/>
+                            </constraint>
+                            <constraint firstItem="KK6-rE-J7H" firstAttribute="leading" secondItem="STR-le-Nzy" secondAttribute="leading" id="68Z-b7-GTc">
+                                <variation key="heightClass=compact" constant="-13"/>
+                            </constraint>
+                            <constraint firstItem="STR-le-Nzy" firstAttribute="centerX" secondItem="Zb7-oX-ZOH" secondAttribute="centerX" id="76w-qq-8An"/>
+                            <constraint firstItem="MYX-Xt-we5" firstAttribute="leading" secondItem="yld-oi-igf" secondAttribute="leading" constant="76" id="8Nh-n5-hiW">
+                                <variation key="heightClass=compact" constant="417"/>
+                            </constraint>
+                            <constraint firstItem="STR-le-Nzy" firstAttribute="trailing" secondItem="htF-K7-EyJ" secondAttribute="trailingMargin" id="8zt-aZ-dgw"/>
+                            <constraint firstItem="MYX-Xt-we5" firstAttribute="top" secondItem="yld-oi-igf" secondAttribute="top" constant="19" id="ES4-42-am4">
+                                <variation key="heightClass=compact" constant="38"/>
+                            </constraint>
+                            <constraint firstItem="Zb7-oX-ZOH" firstAttribute="top" secondItem="STR-le-Nzy" secondAttribute="bottom" constant="97" id="L9s-PS-rCa">
+                                <variation key="heightClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="KK6-rE-J7H" firstAttribute="centerY" secondItem="dj0-ws-OS4" secondAttribute="centerY" id="TY1-Co-hb0"/>
+                            <constraint firstItem="MYX-Xt-we5" firstAttribute="centerY" secondItem="htF-K7-EyJ" secondAttribute="centerY" constant="-183.5" id="cmn-qx-MlM">
+                                <variation key="heightClass=compact" constant="-33"/>
+                            </constraint>
+                            <constraint firstItem="KK6-rE-J7H" firstAttribute="leading" secondItem="htF-K7-EyJ" secondAttribute="leadingMargin" id="dkP-c7-BJ7">
+                                <variation key="heightClass=compact" constant="-13"/>
+                            </constraint>
+                            <constraint firstItem="MYX-Xt-we5" firstAttribute="top" secondItem="yld-oi-igf" secondAttribute="top" constant="19" id="q4G-gl-LS8">
+                                <variation key="heightClass=compact" constant="38"/>
+                            </constraint>
+                            <constraint firstItem="STR-le-Nzy" firstAttribute="centerY" secondItem="htF-K7-EyJ" secondAttribute="centerY" id="sTJ-od-nQn">
+                                <variation key="heightClass=compact" constant="-98.5"/>
+                            </constraint>
+                            <constraint firstItem="STR-le-Nzy" firstAttribute="top" secondItem="KK6-rE-J7H" secondAttribute="bottom" constant="61" id="sfD-FX-X2M">
+                                <variation key="heightClass=compact" constant="-236"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yld-oi-igf"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbl" destination="STR-le-Nzy" id="FyU-xH-ZCk"/>
+                        <outlet property="picker" destination="MYX-Xt-we5" id="9At-3W-Mqw"/>
+                        <outlet property="stepper" destination="Zb7-oX-ZOH" id="ZmO-Dc-RZn"/>
+                        <outlet property="switcher" destination="dj0-ws-OS4" id="nUd-OJ-MsL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfw-ca-8Z6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4041" y="627"/>
         </scene>
     </scenes>
 </document>
