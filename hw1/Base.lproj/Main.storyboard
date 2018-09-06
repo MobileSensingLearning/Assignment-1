@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,32 +16,32 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stepper hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="oRX-ze-BHQ">
-                                <rect key="frame" x="140" y="460" width="94" height="29"/>
+                                <rect key="frame" x="286" y="127" width="94" height="29"/>
                                 <connections>
                                     <action selector="stepperClicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="Dzb-Z4-Aik"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn on to use the counter." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJr-qH-sjH">
-                                <rect key="frame" x="16" y="221" width="206" height="21"/>
+                                <rect key="frame" x="7" y="274" width="206" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bep-18-6Re">
+                                <rect key="frame" x="417" y="38" width="230" height="233"/>
+                            </pickerView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gEc-DU-wQ5">
-                                <rect key="frame" x="280" y="216" width="51" height="31"/>
+                                <rect key="frame" x="278" y="269" width="51" height="31"/>
                                 <connections>
                                     <action selector="switcherSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="grg-iT-03I"/>
                                 </connections>
                             </switch>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bep-18-6Re">
-                                <rect key="frame" x="76" y="39" width="222" height="108"/>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3b-dC-e5s">
-                                <rect key="frame" x="16" y="303" width="343" height="60"/>
+                                <rect key="frame" x="20" y="59" width="627" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -49,21 +49,42 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gEc-DU-wQ5" firstAttribute="leading" secondItem="RJr-qH-sjH" secondAttribute="trailing" constant="58" id="DaN-fp-iKX"/>
-                            <constraint firstItem="Bep-18-6Re" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="FAE-LB-nrE"/>
+                            <constraint firstItem="Bep-18-6Re" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="2LE-ex-Qv1">
+                                <variation key="heightClass=compact" constant="38"/>
+                            </constraint>
+                            <constraint firstItem="gEc-DU-wQ5" firstAttribute="leading" secondItem="RJr-qH-sjH" secondAttribute="trailing" constant="58" id="DaN-fp-iKX">
+                                <variation key="heightClass=compact" constant="65"/>
+                            </constraint>
                             <constraint firstItem="RJr-qH-sjH" firstAttribute="centerY" secondItem="gEc-DU-wQ5" secondAttribute="centerY" id="Hws-un-mGe"/>
-                            <constraint firstItem="Bep-18-6Re" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="KFR-Fb-QEE"/>
-                            <constraint firstItem="Bep-18-6Re" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="MqL-wz-BSa"/>
-                            <constraint firstItem="Bep-18-6Re" firstAttribute="centerX" secondItem="d3b-dC-e5s" secondAttribute="centerX" id="SdE-oc-tV0"/>
-                            <constraint firstItem="d3b-dC-e5s" firstAttribute="top" secondItem="RJr-qH-sjH" secondAttribute="bottom" constant="61" id="TvC-gR-Yns"/>
-                            <constraint firstItem="Bep-18-6Re" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="Vur-u9-T6L"/>
-                            <constraint firstItem="d3b-dC-e5s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XcW-iV-y8Q"/>
+                            <constraint firstItem="Bep-18-6Re" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="LS3-Sl-PJF">
+                                <variation key="heightClass=compact" constant="38"/>
+                            </constraint>
+                            <constraint firstItem="d3b-dC-e5s" firstAttribute="top" secondItem="RJr-qH-sjH" secondAttribute="bottom" constant="61" id="TvC-gR-Yns">
+                                <variation key="heightClass=compact" constant="-236"/>
+                            </constraint>
+                            <constraint firstItem="Bep-18-6Re" firstAttribute="centerX" secondItem="d3b-dC-e5s" secondAttribute="centerX" id="WO3-YM-D2O">
+                                <variation key="heightClass=compact" constant="198.5"/>
+                            </constraint>
+                            <constraint firstItem="Bep-18-6Re" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-183.5" id="Wo5-Sv-dyt">
+                                <variation key="heightClass=compact" constant="-33"/>
+                            </constraint>
+                            <constraint firstItem="d3b-dC-e5s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XcW-iV-y8Q">
+                                <variation key="heightClass=compact" constant="-98.5"/>
+                            </constraint>
                             <constraint firstItem="d3b-dC-e5s" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ZHM-jn-vWK"/>
-                            <constraint firstItem="oRX-ze-BHQ" firstAttribute="top" secondItem="d3b-dC-e5s" secondAttribute="bottom" constant="97" id="Zl9-yg-Db8"/>
+                            <constraint firstItem="oRX-ze-BHQ" firstAttribute="top" secondItem="d3b-dC-e5s" secondAttribute="bottom" constant="97" id="Zl9-yg-Db8">
+                                <variation key="heightClass=compact" constant="8"/>
+                            </constraint>
                             <constraint firstItem="d3b-dC-e5s" firstAttribute="centerX" secondItem="oRX-ze-BHQ" secondAttribute="centerX" id="che-jt-YNO"/>
-                            <constraint firstItem="RJr-qH-sjH" firstAttribute="leading" secondItem="d3b-dC-e5s" secondAttribute="leading" id="fHN-vn-g4o"/>
-                            <constraint firstItem="gEc-DU-wQ5" firstAttribute="top" secondItem="Bep-18-6Re" secondAttribute="bottom" constant="69" id="ipz-dd-YFZ"/>
-                            <constraint firstItem="RJr-qH-sjH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="p9i-6n-MpY"/>
+                            <constraint firstItem="RJr-qH-sjH" firstAttribute="leading" secondItem="d3b-dC-e5s" secondAttribute="leading" id="fHN-vn-g4o">
+                                <variation key="heightClass=compact" constant="-13"/>
+                            </constraint>
+                            <constraint firstItem="Bep-18-6Re" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="o3g-Pv-7P4">
+                                <variation key="heightClass=compact" constant="417"/>
+                            </constraint>
+                            <constraint firstItem="RJr-qH-sjH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="p9i-6n-MpY">
+                                <variation key="heightClass=compact" constant="-13"/>
+                            </constraint>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -76,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+            <point key="canvasLocation" x="24.7376311844078" y="31.199999999999999"/>
         </scene>
     </scenes>
 </document>
