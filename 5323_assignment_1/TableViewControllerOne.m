@@ -61,7 +61,7 @@
     if(indexPath.section == 1) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"EnyiCell2" forIndexPath:indexPath];
         // Configure the cell...
-        cell.textLabel.text = @"Section2";
+        cell.textLabel.text = @"Bull's Eye!";
     }
     if(indexPath.section == 2) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"EnyiCell3" forIndexPath:indexPath];

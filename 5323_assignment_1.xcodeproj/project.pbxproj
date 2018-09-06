@@ -15,6 +15,7 @@
 		207478622136041900BCF5BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 207478612136041900BCF5BE /* main.m */; };
 		2074786C2136041900BCF5BE /* _323_assignment_1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2074786B2136041900BCF5BE /* _323_assignment_1Tests.m */; };
 		207478772136041900BCF5BE /* _323_assignment_1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 207478762136041900BCF5BE /* _323_assignment_1UITests.m */; };
+		6589C73E2141BA6B00DD60C4 /* BullsEye.m in Sources */ = {isa = PBXBuildFile; fileRef = 6589C73D2141BA6A00DD60C4 /* BullsEye.m */; };
 		65BFB121213F43D000BBEEF3 /* TableViewControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BFB120213F43D000BBEEF3 /* TableViewControllerOne.m */; };
 		65BFB124213F593A00BBEEF3 /* ViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BFB123213F593A00BBEEF3 /* ViewControllerTwo.m */; };
 		65BFB127213F5B0D00BBEEF3 /* ViewControllerThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BFB126213F5B0D00BBEEF3 /* ViewControllerThree.m */; };
@@ -57,6 +58,8 @@
 		207478722136041900BCF5BE /* 5323_assignment_1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 5323_assignment_1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		207478762136041900BCF5BE /* _323_assignment_1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _323_assignment_1UITests.m; sourceTree = "<group>"; };
 		207478782136041900BCF5BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6589C73C2141BA6A00DD60C4 /* BullsEye.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullsEye.h; sourceTree = "<group>"; };
+		6589C73D2141BA6A00DD60C4 /* BullsEye.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BullsEye.m; sourceTree = "<group>"; };
 		65BFB11F213F43D000BBEEF3 /* TableViewControllerOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewControllerOne.h; sourceTree = "<group>"; };
 		65BFB120213F43D000BBEEF3 /* TableViewControllerOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerOne.m; sourceTree = "<group>"; };
 		65BFB122213F593A00BBEEF3 /* ViewControllerTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerTwo.h; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				207478552136041800BCF5BE /* ViewController.h */,
 				207478562136041800BCF5BE /* ViewController.m */,
 				207478582136041800BCF5BE /* Main.storyboard */,
+				6589C73C2141BA6A00DD60C4 /* BullsEye.h */,
+				6589C73D2141BA6A00DD60C4 /* BullsEye.m */,
 				65BFB12E213F5BC400BBEEF3 /* CollectionViewController.h */,
 				65BFB12F213F5BC400BBEEF3 /* CollectionViewController.m */,
 				65BFB125213F5B0D00BBEEF3 /* ViewControllerThree.h */,
@@ -292,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6589C73E2141BA6B00DD60C4 /* BullsEye.m in Sources */,
 				65BFB12D213F5B2800BBEEF3 /* ViewControllerFive.m in Sources */,
 				65BFB12A213F5B1E00BBEEF3 /* ViewControllerFour.m in Sources */,
 				65BFB124213F593A00BBEEF3 /* ViewControllerTwo.m in Sources */,
