@@ -11,6 +11,7 @@
 		203CF5D921421BF400F16B2C /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 203CF5D721421BF400F16B2C /* Timer.m */; };
 		203CF5DC2142211C00F16B2C /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 203CF5DA2142211C00F16B2C /* ImageModel.m */; };
 		203CF5DF2142222700F16B2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203CF5DD2142222700F16B2C /* ViewController.m */; };
+		203CF5E221422BE000F16B2C /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 203CF5E021422BA600F16B2C /* CollectionViewCell.m */; };
 		207478542136041800BCF5BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 207478532136041800BCF5BE /* AppDelegate.m */; };
 		2074785A2136041800BCF5BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 207478582136041800BCF5BE /* Main.storyboard */; };
 		2074785C2136041900BCF5BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2074785B2136041900BCF5BE /* Assets.xcassets */; };
@@ -21,8 +22,6 @@
 		6589C73E2141BA6B00DD60C4 /* BullsEye.m in Sources */ = {isa = PBXBuildFile; fileRef = 6589C73D2141BA6A00DD60C4 /* BullsEye.m */; };
 		6589C7412141C12300DD60C4 /* StepSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6589C73F2141C12200DD60C4 /* StepSwitch.m */; };
 		65BFB121213F43D000BBEEF3 /* TableViewControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BFB120213F43D000BBEEF3 /* TableViewControllerOne.m */; };
-		65BFB12A213F5B1E00BBEEF3 /* ViewControllerFour.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BFB129213F5B1E00BBEEF3 /* ViewControllerFour.m */; };
-		65BFB12D213F5B2800BBEEF3 /* ViewControllerFive.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BFB12C213F5B2800BBEEF3 /* ViewControllerFive.m */; };
 		65BFB130213F5BC400BBEEF3 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BFB12F213F5BC400BBEEF3 /* CollectionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +51,8 @@
 		203CF5DB2142211C00F16B2C /* ImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
 		203CF5DD2142222700F16B2C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../../school/f18/5323/Larson_Example_1/SMUExampleOne/SMUExampleOne/ViewController.m; sourceTree = "<group>"; };
 		203CF5DE2142222700F16B2C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../../school/f18/5323/Larson_Example_1/SMUExampleOne/SMUExampleOne/ViewController.h; sourceTree = "<group>"; };
+		203CF5E021422BA600F16B2C /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		203CF5E121422BE000F16B2C /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		2074784F2136041800BCF5BE /* 5323_assignment_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 5323_assignment_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		207478522136041800BCF5BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		207478532136041800BCF5BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,10 +73,6 @@
 		6589C7402141C12300DD60C4 /* StepSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepSwitch.h; sourceTree = "<group>"; };
 		65BFB11F213F43D000BBEEF3 /* TableViewControllerOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewControllerOne.h; sourceTree = "<group>"; };
 		65BFB120213F43D000BBEEF3 /* TableViewControllerOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerOne.m; sourceTree = "<group>"; };
-		65BFB128213F5B1E00BBEEF3 /* ViewControllerFour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerFour.h; sourceTree = "<group>"; };
-		65BFB129213F5B1E00BBEEF3 /* ViewControllerFour.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerFour.m; sourceTree = "<group>"; };
-		65BFB12B213F5B2800BBEEF3 /* ViewControllerFive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerFive.h; sourceTree = "<group>"; };
-		65BFB12C213F5B2800BBEEF3 /* ViewControllerFive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerFive.m; sourceTree = "<group>"; };
 		65BFB12E213F5BC400BBEEF3 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		65BFB12F213F5BC400BBEEF3 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,10 +142,8 @@
 				6589C73F2141C12200DD60C4 /* StepSwitch.m */,
 				65BFB12E213F5BC400BBEEF3 /* CollectionViewController.h */,
 				65BFB12F213F5BC400BBEEF3 /* CollectionViewController.m */,
-				65BFB128213F5B1E00BBEEF3 /* ViewControllerFour.h */,
-				65BFB129213F5B1E00BBEEF3 /* ViewControllerFour.m */,
-				65BFB12B213F5B2800BBEEF3 /* ViewControllerFive.h */,
-				65BFB12C213F5B2800BBEEF3 /* ViewControllerFive.m */,
+				203CF5E121422BE000F16B2C /* CollectionViewCell.h */,
+				203CF5E021422BA600F16B2C /* CollectionViewCell.m */,
 				65BFB11F213F43D000BBEEF3 /* TableViewControllerOne.h */,
 				65BFB120213F43D000BBEEF3 /* TableViewControllerOne.m */,
 				2074785B2136041900BCF5BE /* Assets.xcassets */,
@@ -308,8 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6589C73E2141BA6B00DD60C4 /* BullsEye.m in Sources */,
-				65BFB12D213F5B2800BBEEF3 /* ViewControllerFive.m in Sources */,
-				65BFB12A213F5B1E00BBEEF3 /* ViewControllerFour.m in Sources */,
 				203CF5DC2142211C00F16B2C /* ImageModel.m in Sources */,
 				65BFB121213F43D000BBEEF3 /* TableViewControllerOne.m in Sources */,
 				203CF5DF2142222700F16B2C /* ViewController.m in Sources */,
@@ -318,6 +311,7 @@
 				6589C7412141C12300DD60C4 /* StepSwitch.m in Sources */,
 				207478542136041800BCF5BE /* AppDelegate.m in Sources */,
 				203CF5D621421AD700F16B2C /* segmentedControl.m in Sources */,
+				203CF5E221422BE000F16B2C /* CollectionViewCell.m in Sources */,
 				65BFB130213F5BC400BBEEF3 /* CollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5BLPR5S65;
 				INFOPLIST_FILE = 5323_assignment_1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,6 +499,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5BLPR5S65;
 				INFOPLIST_FILE = 5323_assignment_1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
