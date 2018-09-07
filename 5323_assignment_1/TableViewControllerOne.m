@@ -66,8 +66,10 @@
     
     if(indexPath.section == 0){
         cell = [tableView dequeueReusableCellWithIdentifier:@"EnyiCell1" forIndexPath:indexPath];
+//        self.myImageModel getImageWithName:self.myImageModel.imageNames[indexPath.row]
         // Configure the cell...
         //cell.textLabel.text = @"Section1";
+        
         cell.textLabel.text = self.myImageModel.imageNames[indexPath.row];
     }
     if(indexPath.section == 1) {
@@ -93,9 +95,9 @@
     if(indexPath.section == 5) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"EnyiCell6" forIndexPath:indexPath];
         // Configure the cell...
-        cell.textLabel.text = @"Section6";
+        cell.textLabel.text = @"Collection";
     }
-    
+    NSLog(@"indexPath is: %li", indexPath);
     return cell;
 }
 
