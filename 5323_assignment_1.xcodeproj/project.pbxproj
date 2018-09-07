@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		203CF5D621421AD700F16B2C /* segmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 203CF5D421421AD600F16B2C /* segmentedControl.m */; };
 		203CF5D921421BF400F16B2C /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 203CF5D721421BF400F16B2C /* Timer.m */; };
+		203CF5DC2142211C00F16B2C /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 203CF5DA2142211C00F16B2C /* ImageModel.m */; };
+		203CF5DF2142222700F16B2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203CF5DD2142222700F16B2C /* ViewController.m */; };
 		207478542136041800BCF5BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 207478532136041800BCF5BE /* AppDelegate.m */; };
-		207478572136041800BCF5BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207478562136041800BCF5BE /* ViewController.m */; };
 		2074785A2136041800BCF5BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 207478582136041800BCF5BE /* Main.storyboard */; };
 		2074785C2136041900BCF5BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2074785B2136041900BCF5BE /* Assets.xcassets */; };
 		2074785F2136041900BCF5BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2074785D2136041900BCF5BE /* LaunchScreen.storyboard */; };
@@ -47,11 +48,13 @@
 		203CF5D521421AD700F16B2C /* segmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = segmentedControl.h; sourceTree = "<group>"; };
 		203CF5D721421BF400F16B2C /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
 		203CF5D821421BF400F16B2C /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		203CF5DA2142211C00F16B2C /* ImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
+		203CF5DB2142211C00F16B2C /* ImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		203CF5DD2142222700F16B2C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../../school/f18/5323/Larson_Example_1/SMUExampleOne/SMUExampleOne/ViewController.m; sourceTree = "<group>"; };
+		203CF5DE2142222700F16B2C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../../school/f18/5323/Larson_Example_1/SMUExampleOne/SMUExampleOne/ViewController.h; sourceTree = "<group>"; };
 		2074784F2136041800BCF5BE /* 5323_assignment_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 5323_assignment_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		207478522136041800BCF5BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		207478532136041800BCF5BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		207478552136041800BCF5BE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		207478562136041800BCF5BE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		207478592136041800BCF5BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2074785B2136041900BCF5BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2074785E2136041900BCF5BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -127,14 +130,16 @@
 			children = (
 				207478522136041800BCF5BE /* AppDelegate.h */,
 				207478532136041800BCF5BE /* AppDelegate.m */,
-				207478552136041800BCF5BE /* ViewController.h */,
-				207478562136041800BCF5BE /* ViewController.m */,
+				203CF5DE2142222700F16B2C /* ViewController.h */,
+				203CF5DD2142222700F16B2C /* ViewController.m */,
 				207478582136041800BCF5BE /* Main.storyboard */,
 				6589C73C2141BA6A00DD60C4 /* BullsEye.h */,
 				6589C73D2141BA6A00DD60C4 /* BullsEye.m */,
 				203CF5D521421AD700F16B2C /* segmentedControl.h */,
 				203CF5D421421AD600F16B2C /* segmentedControl.m */,
 				6589C7402141C12300DD60C4 /* StepSwitch.h */,
+				203CF5DB2142211C00F16B2C /* ImageModel.h */,
+				203CF5DA2142211C00F16B2C /* ImageModel.m */,
 				203CF5D821421BF400F16B2C /* Timer.h */,
 				203CF5D721421BF400F16B2C /* Timer.m */,
 				6589C73F2141C12200DD60C4 /* StepSwitch.m */,
@@ -305,8 +310,9 @@
 				6589C73E2141BA6B00DD60C4 /* BullsEye.m in Sources */,
 				65BFB12D213F5B2800BBEEF3 /* ViewControllerFive.m in Sources */,
 				65BFB12A213F5B1E00BBEEF3 /* ViewControllerFour.m in Sources */,
+				203CF5DC2142211C00F16B2C /* ImageModel.m in Sources */,
 				65BFB121213F43D000BBEEF3 /* TableViewControllerOne.m in Sources */,
-				207478572136041800BCF5BE /* ViewController.m in Sources */,
+				203CF5DF2142222700F16B2C /* ViewController.m in Sources */,
 				203CF5D921421BF400F16B2C /* Timer.m in Sources */,
 				207478622136041900BCF5BE /* main.m in Sources */,
 				6589C7412141C12300DD60C4 /* StepSwitch.m in Sources */,
