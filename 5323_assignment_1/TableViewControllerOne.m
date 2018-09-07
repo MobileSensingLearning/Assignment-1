@@ -45,7 +45,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // This can be allocated dynamically depending on however many cells you want, need to implement array if you want more than one cell
     if(section==0)
-         return self.myImageModel.imageNames.count;
+        return self.myImageModel.imageNames.count;
     if(section==1)
         return 1;
     if(section==2)
@@ -65,11 +65,10 @@
     UITableViewCell *cell = nil;
     
     if(indexPath.section == 0){
-        cell = [tableView dequeueReusableCellWithIdentifier:@"EnyiCell1" forIndexPath:indexPath];
-//        self.myImageModel getImageWithName:self.myImageModel.imageNames[indexPath.row]
+        cell = [tableView dequeueReusableCellWithIdentifier:@"EnyiCell1" forIndexPath: indexPath];
+//        self.myImageModel getImageWithName:self.myImageModel.imageNames[indexPath.row];
         // Configure the cell...
-        //cell.textLabel.text = @"Section1";
-        
+        NSLog(@"%@",indexPath);
         cell.textLabel.text = self.myImageModel.imageNames[indexPath.row];
     }
     if(indexPath.section == 1) {
@@ -97,9 +96,22 @@
         // Configure the cell...
         cell.textLabel.text = @"Collection";
     }
-    NSLog(@"indexPath is: %li", indexPath);
     return cell;
 }
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    BOOL isVC = [[segue destinationViewController] isKindOfClass:[ImageController class]];
+    
+    if(isVC){
+        UITableViewCell* cell = (UITableViewCell*)sender;
+        ImageController *vc = [segue destinationViewController];
+        
+        vc.imageName = cell.textLabel.text;
+    }
+}
+
 
 
 /*

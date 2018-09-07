@@ -28,10 +28,10 @@
 }
 
 -(NSString*)imageName{
-    
+
     if(!_imageName)
         _imageName = @"Eric1";
-    
+
     return _imageName;
 }
 
