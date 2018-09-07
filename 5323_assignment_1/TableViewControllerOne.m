@@ -71,12 +71,12 @@
     if(indexPath.section == 3) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"EnyiCell4" forIndexPath:indexPath];
         // Configure the cell...
-        cell.textLabel.text = @"Section4";
+        cell.textLabel.text = @"Segmented Control";
     }
     if(indexPath.section == 4) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"EnyiCell5" forIndexPath:indexPath];
         // Configure the cell...
-        cell.textLabel.text = @"Section5";
+        cell.textLabel.text = @"Timer";
     }
     if(indexPath.section == 5) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"EnyiCell6" forIndexPath:indexPath];

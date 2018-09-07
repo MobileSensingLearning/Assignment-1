@@ -112,7 +112,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Y38-Ad-tKL" kind="show" id="4ya-q0-YDy"/>
+                                    <segue destination="uvB-Nd-pir" kind="show" id="Ulh-eR-myE"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EnyiCell5" textLabel="40c-LZ-RUm" style="IBUITableViewCellStyleDefault" id="xo6-pb-g9p">
@@ -132,7 +132,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="J0U-HN-ZNw" kind="show" id="Pho-gb-Y1B"/>
+                                    <segue destination="9zs-70-Ouc" kind="show" id="qL0-d6-Ptq"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EnyiCell6" textLabel="W0Y-6e-Xix" style="IBUITableViewCellStyleDefault" id="11q-bM-9ZG">
@@ -200,36 +200,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFC-2H-E7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2312" y="1715"/>
-        </scene>
-        <!--View Controller Five-->
-        <scene sceneID="BDc-X2-0Ux">
-            <objects>
-                <viewController id="J0U-HN-ZNw" customClass="ViewControllerFive" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="APS-dp-fqk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="aLA-sL-JXJ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HzM-WL-Ud0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3277" y="1980"/>
-        </scene>
-        <!--View Controller Four-->
-        <scene sceneID="8pe-Bj-Ew8">
-            <objects>
-                <viewController id="Y38-Ad-tKL" customClass="ViewControllerFour" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7fz-sR-dP3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="g7s-co-Jn4"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CSH-A3-vMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4042" y="1361"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gFL-i4-nZp">
@@ -462,6 +432,79 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vfw-ca-8Z6" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4041" y="627"/>
+        </scene>
+        <!--Segmented Control-->
+        <scene sceneID="avm-Xm-3pI">
+            <objects>
+                <viewController id="uvB-Nd-pir" customClass="segmentedControl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PBH-2u-ffU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xzy-zg-JSB">
+                                <rect key="frame" x="115" y="319" width="146" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="0"/>
+                                    <segment title="1"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="uvB-Nd-pir" eventType="valueChanged" id="f15-ed-6ky"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkY-WQ-Hii">
+                                <rect key="frame" x="16" y="203" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="uZd-Aq-oN7"/>
+                    </view>
+                    <connections>
+                        <outlet property="segmentedControl" destination="xzy-zg-JSB" id="dEd-zP-Wkh"/>
+                        <outlet property="segmentedControlLabel" destination="DkY-WQ-Hii" id="HSb-rn-hgi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3xX-cn-ZSt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4041" y="1426"/>
+        </scene>
+        <!--Timer-->
+        <scene sceneID="OGN-zX-vkm">
+            <objects>
+                <viewController id="9zs-70-Ouc" customClass="Timer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aHd-bR-zL6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food Waste since app launch, in pounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1q9-Ms-OS0">
+                                <rect key="frame" x="33" y="140" width="309" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQK-Ir-d1B">
+                                <rect key="frame" x="33" y="237" width="309" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="D9l-iE-l3K"/>
+                    </view>
+                    <connections>
+                        <outlet property="foodWasteLabel" destination="sQK-Ir-d1B" id="njJ-xG-jGN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Lx-Fe-gvs" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3255" y="1976"/>
         </scene>
     </scenes>
 </document>
