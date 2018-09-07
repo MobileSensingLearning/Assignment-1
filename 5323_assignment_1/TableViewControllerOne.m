@@ -8,7 +8,7 @@
 
 #import "TableViewControllerOne.h"
 #import "ImageModel.h"
-#import "ViewController.h"
+#import "ImageController.h"
 
 @interface TableViewControllerOne ()
 @property (strong,nonatomic) ImageModel* myImageModel;
